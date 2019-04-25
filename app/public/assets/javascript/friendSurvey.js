@@ -1,4 +1,4 @@
-"use strict";
+
 
 $("#submitBtn").on("click", function(event) {
     event.preventDefault();

@@ -21,9 +21,10 @@ app.use(bodyParser.json());
 // ROUTER
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
-
+//app.use('/app/routing/apiRoutes', apiRoutes);
+//app.use('/', htmlRoutes);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
 // LISTENER
@@ -31,3 +32,5 @@ app.use('/', htmlRoutes);
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
   });
+
+ 

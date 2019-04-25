@@ -2,11 +2,11 @@
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 
-"use strict";
+
 
 var friends = require("../data/friends.js");
 var express = require("express");
-var apirouter = express.Router();
+//var apirouter = express.Router();
 
  
 
